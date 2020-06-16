@@ -41,7 +41,7 @@ class PostInstallCommand(install):
             pyswitchlib_api_daemon = os.path.join(_get_latest_lib_path(), pyswitchlib_daemon_scriptname)
 
             if not os.path.isdir(pyswitchlib_etc_path):
-		os.makedirs(pyswitchlib_etc_path)
+                os.makedirs(pyswitchlib_etc_path)
 
             if os.path.isdir(pyswitchlib_etc_path):
                 os.system('cp ' + pyswitchlib_default_conf_filename + ' ' + pyswitchlib_etc_path)
